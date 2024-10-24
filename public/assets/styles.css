@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Slate-300: hsl(212, 45%, 89%);
+  --Slate-500: hsl(216, 15%, 48%);
+  --Slate-900: hsl(218, 44%, 22%);
+}
+
+body {
+  background-color: var(--Slate-300);
+  font-family: "Outfit", sans-serif;
+}
+
+.qr-container-wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-container {
+  width: 84%;
+  height: 59%;
+  /* border: 2px solid black; */
+  border-radius: 1.07rem;
+  background-color: var(--White);
+  padding: 1rem;
+}
+
+.qr-container > img {
+  width: 100%;
+  border-radius: 1.07rem;
+}
+
+.qr-container > h1 {
+  font-size: 1.4rem;
+  margin: 0.9rem 0;
+  padding: 0 0.2rem 0 0.8rem;
+  color: var(--Slate-900);
+}
+
+.qr-container > p {
+  padding: 0 0.2rem 0 0.8rem;
+  font-size: 0.938rem;
+  color: var(--Slate-500);
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+  color: var(--Slate-900);
+}
+
+.attribution > a {
+  text-decoration: none;
+  color: var(--Slate-900);
+}
+
+.attribution > a:hover {
+  text-decoration: underline;
+}
+
+/* Desktop Design */
+@media only screen and (width >= 64em) {
+  .qr-container {
+    width: 20%;
+    height: 76%;
+  }
+
+  .qr-container > img {
+    height: 55%;
+  }
+}
