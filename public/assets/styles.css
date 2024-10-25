@@ -26,12 +26,11 @@ body {
 }
 
 .qr-container {
-  width: 84%;
-  height: 59%;
+  width: 80%;
   /* border: 2px solid black; */
-  border-radius: 1.07rem;
+  border-radius: 1.37rem;
   background-color: var(--White);
-  padding: 1rem;
+  padding: 1rem 1rem 2.7rem 1rem;
 }
 
 .qr-container > img {
@@ -42,13 +41,13 @@ body {
 .qr-container > h1 {
   font-size: 1.4rem;
   margin: 0.9rem 0;
-  padding: 0 0.2rem 0 0.8rem;
   color: var(--Slate-900);
+  text-align: center;
 }
 
 .qr-container > p {
-  padding: 0 0.2rem 0 0.8rem;
-  font-size: 0.938rem;
+  text-align: center;
+  font-size: 1rem;
   color: var(--Slate-500);
 }
 
@@ -71,7 +70,15 @@ body {
 @media only screen and (width >= 64em) {
   .qr-container {
     width: 20%;
-    height: 76%;
+    padding-bottom: 2rem;
+  }
+
+  .qr-container > h1 {
+    font-size: 1.2rem;
+  }
+
+  .qr-container > p {
+    font-size: 0.938rem;
   }
 
   .qr-container > img {
